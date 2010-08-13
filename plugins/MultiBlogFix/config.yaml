@@ -1,0 +1,9 @@
+id: MultiBlogFix
+name: MultiBlog ExcludeBlog Fix
+description: 'This plugin fixes this bug: http://bugs.movabletype.org/default.asp?100619'
+plugin_author: 'Endevver, LLC.'
+author_link: 'http://endevver.com/'
+version: 1.0
+
+callbacks:
+  search_blog_list: $MultiBlogFix::MultiBlogFix::Plugin::search_blog_filter
