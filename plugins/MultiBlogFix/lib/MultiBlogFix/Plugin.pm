@@ -29,7 +29,7 @@ sub search_blog_filter {
         @blogs = split(',',$args->{'include_blogs'});
     }
     foreach (@blogs) { $list->{$_} = 1; }
-    $app->{searchparam}{$key} = $list;
+    $app->{searchparam}{$key} = $list if $key;
     return 1;
 }
 
